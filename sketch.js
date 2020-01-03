@@ -43,7 +43,6 @@ function removeElementsByClass(className){
     }
 }
 
-
 function colorColumn () {
 
     let colorSelect = document.getElementsByName('sketchColor');
@@ -80,7 +79,7 @@ function colorColumn () {
         case 'fade':
             cell.forEach(pixel => {
                 pixel.addEventListener('mouseenter', ()=> {
-                    pixel.style.backgroundColor = 'blue';
+                    pixel.style.backgroundColor = 'black';
                     let currentOpacity = +pixel.style.opacity + 0.2;
                     pixel.style.opacity = currentOpacity;
                 });
