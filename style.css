@@ -36,27 +36,28 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    /* display: flex; */
-
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ 
 }
+
 .row {
-    resize: vertical;
-    /* overflow: auto; */
-    height: 6.25%;
-    
-
-
-    /* display: inline-flex; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 16;
+    width: auto;
+    height: auto;
 }
 
 .column {
     border-width: 1px;
     border-color: black;
     border-style: solid;
-    width:5.882353%;
-    height: 100%;
-    resize: horizontal;
-    /* overflow: auto; */
 
-    display: inline-block;
+    flex: 1;
+    width: auto;
+    height: auto;
 }
